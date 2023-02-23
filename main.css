@@ -1,0 +1,45 @@
+@import url(normalize.css);
+/* import file from assignment*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+/* making grid items*/
+.grid-item { 
+    background-color: rgba(157, 255, 244, 0.8);
+    border: 5px groove rgba(231, 142, 34, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+/*fitting image*/
+  img {
+    width: 100%;
+    height: auto;
+  }
+  /* setting properties for text and background*/
+  body {
+    background-color: rgb(152, 214, 193);
+    padding: 5%;
+    font-family: 'Times New Roman', serif;
+  }
+  /*header font*/
+  h1 {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(126, 40, 0) 
+  }
+  /*grid for small screen*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+  }
+  /*settings for larger screen*/
+  @media screen and (min-width: 600px) { 
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(152, 214, 193);
+    padding: 5%;
+   
+
+}
+  }
